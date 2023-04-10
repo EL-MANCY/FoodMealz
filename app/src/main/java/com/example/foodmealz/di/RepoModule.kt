@@ -11,7 +11,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object repoModule {
+object RepoModule {
 
     @Provides
     fun provideRepo(apiService: ApiService): MealzRepo {

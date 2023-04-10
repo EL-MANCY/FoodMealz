@@ -6,6 +6,6 @@ import com.example.domain.repo.MealzRepo
 
 class MealsRepoImpl(private val apiService: ApiService):MealzRepo {
 
-    override fun getMealsFromRemote(): CategoryResponse = apiService.getMeals()
+    override suspend fun getMealsFromRemote(): CategoryResponse = apiService.getMeals()
 
 }
